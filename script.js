@@ -35,6 +35,7 @@ function gameBoard() {
 
 
 	const handleBoxClick = (event) => {
+		
 		const clickedBox = parseInt(event.target.dataset.index);
 
 		if (board[clickedBox] === '') {
@@ -48,6 +49,7 @@ function gameBoard() {
 			} else {
 				currentPlayerIndex = (currentPlayerIndex === 0) ? 1 : 0
 			}
+			playSound();
 		}
 
 	};
@@ -101,7 +103,16 @@ function gameBoard() {
 	document.getElementById('reset').addEventListener('click', function() {
 		resetGame();
 	});
+ 
+	const playSound = ( )=>{
+      const audio = document.querySelector(`#kick`); 
+		  if (!audio) return;
 
+          audio.currentTime=0
+		  audio.playbackRate=2; 
+          audio.play(); 
+		}
+		
 	return {
 		createBoard,
 		resetGame
