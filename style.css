@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     padding: 0;
@@ -16,7 +17,7 @@ body {
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: #eeeeee;
+    background-color: #F5E8DD;
     row-gap: 15px;
   }
   .header {
@@ -31,11 +32,12 @@ body {
     font-family: "Rubik Scribble", system-ui;
     font-weight: 1000;
     font-style: normal;
+    color: #35374B;
     font-size: 70px;
   }
   .headerText:hover {
     transform: scale(1.1);
-    color: #7e8d99;
+    color: #344955;
   }
   .header-image {
     max-width: 10em;
@@ -50,7 +52,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #b7c4cf;
+    background-color: #CCD3CA;
     min-width: 45%;
     height: 65%;
     border-radius: 20px;
@@ -65,7 +67,7 @@ body {
     height: 500px;
     width: 500px;
     /* border: 5px solid #76ABAE; */
-    background-color: #b7c4cf;
+    background-color: #CCD3CA;
   }
   
   .playerInfo {
@@ -80,8 +82,8 @@ body {
   
     font-weight: 600;
     font-size: 50px;
-    color: #eeeeee;
-    background-color: #595e66;
+    color: #35374B;
+    background-color: #B5C0D0;
     /* border: 5px solid #76ABAE; */
     border-radius: 25px;
   }
@@ -99,14 +101,15 @@ body {
   /* CSS */
   .button-27 {
     appearance: none;
-    background-color: #000000;
-    border: 2px solid #1a1a1a;
+    background-color: #F5E8DD;
+    border: 2px solid #F5E8DD;
     border-radius: 15px;
     box-sizing: border-box;
-    color: #ffffff;
+    color:  #35374B;
+    text-transform: uppercase;
     cursor: pointer;
     display: inline-block;
-    font-family: "Rubik Scribble", system-ui;
+    font-family: "Rubik", system-ui;
     font-size: 16px;
     font-weight: 600;
     line-height: normal;
@@ -167,5 +170,6 @@ body {
     color: black;
     font-weight: 1000;
     font-size: 30px;
+    text-transform: uppercase;
   }
   
