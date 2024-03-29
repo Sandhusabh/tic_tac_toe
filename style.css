@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: "Rubik Scribble", system-ui;
+    vertical-align: baseline;
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .gameArea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #eeeeee;
+    row-gap: 15px;
+  }
+  .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 60px;
+    min-width: 50%;
+  }
+  .headerText {
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: 1000;
+    font-style: normal;
+    font-size: 70px;
+  }
+  .headerText:hover {
+    transform: scale(1.1);
+    color: #7e8d99;
+  }
+  .header-image {
+    max-width: 10em;
+    max-height: 10em;
+  }
+  .header-image:hover {
+    transform: scale(1.1);
+  }
+  .mainContainer {
+    display: flex;
+    align-self: top;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #b7c4cf;
+    min-width: 45%;
+    height: 65%;
+    border-radius: 20px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    height: 500px;
+    width: 500px;
+    /* border: 5px solid #76ABAE; */
+    background-color: #b7c4cf;
+  }
+  
+  .playerInfo {
+    padding: 30px;
+  }
+  .box {
+    display: flex;
+    align-self: stretch;
+    justify-self: stretch;
+    align-items: center;
+    justify-content: center;
+  
+    font-weight: 600;
+    font-size: 50px;
+    color: #eeeeee;
+    background-color: #595e66;
+    /* border: 5px solid #76ABAE; */
+    border-radius: 25px;
+  }
+  
+  .box:hover {
+    transform: scale(1.03);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
+  .buttonArea {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* CSS */
+  .button-27 {
+    appearance: none;
+    background-color: #000000;
+    border: 2px solid #1a1a1a;
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Rubik Scribble", system-ui;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 0;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+    will-change: transform;
+  }
+  
+  .button-27:disabled {
+    pointer-events: none;
+  }
+  
+  .button-27:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+  }
+  
+  .button-27:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
+  /* Styles for the pop-up */
+  .popup {
+    display: none;
+    position: fixed;
+    font-family: "Rubik", system-ui;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    z-index: 9999;
+    border-radius: 15px;
+    height: 32%;
+  }
+  .popupDiv {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    align-content: space-between;
+  }
+  .popupDiv > h1 {
+    font-family: "Rubik Scribble", system-ui;
+    color: black;
+    font-weight: 1000;
+    font-size: 30px;
+  }
+  
