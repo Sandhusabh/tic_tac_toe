@@ -73,6 +73,7 @@ function gameBoard() {
 
 	const openPopup = (player, message) => {
 		const popUp = document.getElementById("popup")
+        popUp.innerText=''
 		const h1 = document.createElement('h1')
 		const p = document.createElement('p')
 		const div = document.createElement('div')
