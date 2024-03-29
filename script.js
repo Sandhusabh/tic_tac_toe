@@ -69,6 +69,8 @@ function gameBoard() {
 		let boxes = document.querySelectorAll('.box')
 		boxes.forEach(box => box.innerText = '')
 		currentPlayerIndex = 0
+        const popUp = document.getElementById("popup")
+        popUp.innerText=''
 	}
 
 	const openPopup = (player, message) => {
@@ -82,7 +84,7 @@ function gameBoard() {
 		button.classList.add('button-27')
 		button.addEventListener('click', closePopup)
 		div.classList.add('popupDiv')
-		p.innerText = 'Close the popup, to reset the game and continue.'
+		p.innerText = 'Close the pop up, to reset the game and continue.'
 		h1.innerText = (message === 'Wins') ? `${player} Wins!` : `It's a Draw!`
 		div.appendChild(h1)
 		div.appendChild(p)
