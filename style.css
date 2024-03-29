@@ -55,6 +55,7 @@ body {
     background-color: #CCD3CA;
     min-width: 45%;
     height: 65%;
+     
     border-radius: 20px;
   }
   .container {
@@ -158,12 +159,13 @@ body {
     height: 32%;
   }
   .popupDiv {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    height: 100%;
-    align-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr; 
+    justify-items: center;
+    align-content: flex-end;
+    gap: 5%;
+    height: 100%;  
   }
   .popupDiv > h1 {
     font-family: "Rubik Scribble", system-ui;
@@ -172,17 +174,17 @@ body {
     font-size: 30px;
     text-transform: uppercase;
   }
-  
+ 
   
 /* Media Query for phones */
 @media only screen and (max-width: 600px) {
     .gameArea {
-      row-gap: 10px;
+      row-gap: 5px;
     }
   
     .header {
       column-gap: 20px;
-      min-width: 80%;
+      min-width: 70%;
     }
   
     .headerText {
@@ -190,13 +192,15 @@ body {
     }
   
     .mainContainer {
-      min-width: 80%;
-      height: 50%;
+      min-width: 95%;
+      height: 70%;
+      row-gap: 5px;
     }
   
-    .container {
-      height: auto;
-      width: 80%;
+    .container { 
+      height: 60%;
+      width: 95%;
+      gap: 15px;
     }
   
     .box {
@@ -205,15 +209,16 @@ body {
   
     .button-27 {
       font-size: 14px;
-      min-height: 40px;
+      min-height: 10px;
     }
   
-    .popup {
-      padding: 10px;
-      height: 50%;
+    .popup { 
+      height: 40%;
+      width: 70%;
     }
   
     .popupDiv > h1 {
-      font-size: 20px;
+      font-size: 30px;
     }
+    
   }
