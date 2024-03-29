@@ -173,3 +173,47 @@ body {
     text-transform: uppercase;
   }
   
+  
+/* Media Query for phones */
+@media only screen and (max-width: 600px) {
+    .gameArea {
+      row-gap: 10px;
+    }
+  
+    .header {
+      column-gap: 20px;
+      min-width: 80%;
+    }
+  
+    .headerText {
+      font-size: 40px;
+    }
+  
+    .mainContainer {
+      min-width: 80%;
+      height: 50%;
+    }
+  
+    .container {
+      height: auto;
+      width: 80%;
+    }
+  
+    .box {
+      font-size: 30px;
+    }
+  
+    .button-27 {
+      font-size: 14px;
+      min-height: 40px;
+    }
+  
+    .popup {
+      padding: 10px;
+      height: 50%;
+    }
+  
+    .popupDiv > h1 {
+      font-size: 20px;
+    }
+  }
